@@ -9,6 +9,7 @@
   "author": "",
   "description": "",
   "dependencies": {
-    "google-home-notifier": "0.0.3"
+    "google-home-notifier": "1.2.0",
+    "twitter": "^1.7.1"
   }
 }
