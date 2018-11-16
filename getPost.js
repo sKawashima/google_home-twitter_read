@@ -7,8 +7,12 @@ const client = new twitter({
   access_token_secret: 'ITJvYpe3fW4cNx7nhQSnGhynToAajbyxhP0BXsmpQMhex'
 })
 
-client.get('search/tweets', {q: 'node.js'}, (error, tweets, response) => {
-   for (const tweet of tweets['statuses']) {
-     console.log(tweet['text'])
-   }
-})
+const getPost = new Promise((query) => {
+    client.get('search/tweets', {q: String(query)}, (error, tweets, response) => {
+       console.log(tweets)
+       return tweets
+    })
+  })
+
+
+console.log(getPost('めう'));

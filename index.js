@@ -3,7 +3,6 @@ const language = 'ja'
 
 googlehome.device('Google-Home', language)
 
-googlehome.notify('めう', (res) => {
-
+googlehome.notify('めうめうめうめうめうめうめうめうめうめうめうめうめうめう', (res) => {
   console.log(res)
 })
